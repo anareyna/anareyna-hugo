@@ -1,0 +1,20 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "Ani portfolio"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = ""
+tags = ["creative", "portfolio", "projects", "minimal", "responsive"]
+features = ["disqus", "responsive", "google analytics"]
+min_version = 0.1
+
+[author]
+  name = "Ana Reyna"
+  homepage = "https://github.com/anareyna"
+
+# If porting an existing theme
+[original]
+  name = "ani"
+  homepage = ""

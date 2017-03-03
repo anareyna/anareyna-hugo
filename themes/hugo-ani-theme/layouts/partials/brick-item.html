@@ -1,0 +1,19 @@
+
+{{ if eq .Params.showonlyimage true }}
+  <a class="l-brick__item l-brick__item--overlay" href="{{ .Permalink }}">
+    <h4 class="l-brick__hover">{{ .Title }}</h4>
+
+{{ else }}
+  <a class="l-brick__item c-box" href="{{ .Permalink }}">
+{{ end }}
+    {{ if and (isset .Params "image") .Params.image }}
+        <img class="c-box__img" src="{{ .Params.image }}">
+    {{ end }}
+
+    {{ if eq .Params.showonlyimage false }}
+      <div class="c-box__padding">
+        <h3 class="c-box__title">{{ .Title }}</h3>
+        <small>{{ .Date.Format "Jan 2, 2006" }}</small>
+      </div>
+    {{ end }}
+</a>

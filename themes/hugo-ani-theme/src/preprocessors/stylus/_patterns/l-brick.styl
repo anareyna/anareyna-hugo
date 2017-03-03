@@ -1,0 +1,76 @@
+
+// used by salvattore.js
+
+.l-brick
+	lost-utility clearfix
+	&[data-columns]
+		&:before
+			content '2 .column.size-1of2'
+			+mobile()
+				content '1 .column.size-1of1'
+			+desktop()
+				content '2 .column.size-1of2'
+		&.l-brick--3 
+			&:before
+				content '3 .column.size-1of3'
+				+mobile()
+					content '1 .column.size-1of1'
+				+desktop()
+					content '3 .column.size-1of3'
+	&__hover 
+		opacity 0
+		transition()
+		margin 0 
+		position absolute
+		top 50%
+		transform translateY(-50%)
+		left 0 
+		right 0 
+		text-align center 
+		color $fontColor
+		
+	&__item
+		color inherit
+		margin 0
+		display block 
+		border-bottom none
+		&:hover 
+			border-bottom none
+		.l-brick--margin &
+			margin 20px 10px
+			+mobile()
+				margin 10px 5px
+		&--overlay 
+			position relative
+			transition()
+			&:hover 
+				transition()				
+				&:before 
+					transition()
+					cursor pointer
+					content ''
+					position absolute 
+					top 0 
+					left 0 
+					bottom 0
+					width 100%
+					height 100%
+					background-color rgba(white, 0.85)
+				.l-brick__hover
+					opacity 1 
+					transition()
+		
+
+/* These are the classes that are going to be applied: */
+.column
+	float left
+.size-1of1
+	width 100%
+.size-1of2
+	width 50%
+.size-1of3
+	width 33.3333%
+.size-1of4
+	width 25%
+.size-1of5
+	width 20%

@@ -1,0 +1,71 @@
+/*
+* Globals
+* @module globals
+*/
+@import 'icons.styl'
+
+*, *:before, *:after
+	box-sizing border-box
+
+html
+	font-family $family1Regular
+	font-size $basefont
+code 
+	font-size 0.8rem
+h1, h2, h3, h4, h5, h6
+	margin 2rem 0
+	font-family $family2Regular
+h1
+	font-size 3rem
+	line-height 3rem
+h2
+	font-size 2.5rem
+	line-height 2.5rem
+	
+h3
+	font-size 2rem
+	line-height 2rem
+h4
+	font-size 1.5rem
+	line-height 1.5rem
+h5
+	font-size 1rem
+	line-height 1rem
+
+body
+	color $fontColor
+	background-color $bgColor
+
+p, ul
+	line-height 1.5rem
+ul
+	padding-left 1rem
+	list-style disc
+
+a
+	outline none
+	color $primaryColor
+	text-decoration none
+	transition()
+	border-bottom 3px solid transparent
+	
+	&:hover 
+		transition()
+		color $fontColor
+		border-bottom none 
+		border-bottom 3px solid $primaryColor	
+	// &:visited 
+	// 	color lighten($primaryColor, 60%)
+	// 	border-bottom 2px solid lighten($primaryColor, 60%)
+blockquote 
+	border-left 3px solid $primaryColor
+	margin-left 0 
+	padding-left 1rem
+	color lighten($fontColor, 40%)
+img
+	display block
+	max-width 100%
+
++mobile()
+	html
+		font-size 18px

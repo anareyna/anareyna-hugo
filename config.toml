@@ -1,0 +1,33 @@
+baseurl = "https://anareyna.github.io/"
+title = "Ana Reyna"
+theme = "hugo-ani-theme"
+languageCode = "en-us"
+pluralizelisttitles= "false"
+
+disqusShortname = "anireyna"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = "UA-53237721-1"
+
+[params]
+  description = "anareyna | design + development"
+
+  [[params.navlinks]]
+  name = "Home"
+  url = ""
+
+  [[params.navlinks]]
+  name = "Blog"
+  url = "blog/"
+
+  [[params.navlinks]]
+  name = "Code"
+  url = "code/"
+
+  [[params.navlinks]]
+  name = "Contact"
+  url = "contact/"
+
+  [params.social]
+  twitter       = "http://www.twitter.com/anareyna"
+  linkedin      = "http://www.linkedin.com/in/anireyna"
+  github        = "http://www.github.com/anareyna"

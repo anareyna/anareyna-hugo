@@ -1,0 +1,13 @@
+<section class="u-ftImg" style="background-image: url(/img/portfolio/gomobile-ft.jpg)">
+	<div class="l-container l-container--fluid">
+		<h2 class="title">{{ .Title }}<br><span class="subtitle">development & design</span></h2>
+	</div>
+</section>
+<section>
+	<div class="l-brick" data-columns>
+	  {{ range (where .Data.Pages "Section" "portfolio") }}
+	      {{ partial "brick-item.html" . }}
+	  {{ end }}
+	</div>
+</section>
+

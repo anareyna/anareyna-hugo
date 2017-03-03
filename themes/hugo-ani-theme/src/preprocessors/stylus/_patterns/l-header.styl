@@ -1,0 +1,141 @@
+.l-header
+	background-color transparent
+	transition all 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+	position fixed
+	width 100%
+	z-index 1
+	&.nav-up 
+		top -100px
+	&.is-fixed
+		position fixed
+		background-color rgba(white, 0.95)
+		width 100%
+		box-shadow 0px 0px 1px 0px rgba(0,0,0,0.1)
+	.l-container
+		display flex
+		justify-content space-between
+		align-items center
+	&__logo-link
+		margin 10px 0
+		border-bottom none
+		transition .6s cubic-bezier(.68,-.55,.265,1.55)
+		&:hover 
+			border-bottom none
+			transform rotate(360deg) scale(0.9)
+	&__logo
+		height 65px
+		transition()
+	&__icon
+		display none
+	&__logo
+		display block
+	&__nav
+		display flex
+		list-style none
+		padding 0
+	&__nav-item
+		&:not(:first-child)
+			margin-left 2rem
+		&.is-active
+			color $primaryColor
+		&:before 
+			display none 
+
+	&__nav-link
+		border-bottom 3px solid transparent
+		padding 0 3px
+		text-transform uppercase
+		transition()
+		color inherit
+		&:hover
+			border-bottom 3px solid $primaryColor
+			transition()
+	&.background--dark
+		color white
+	&.background--light
+		color $fontColor
+
++mobile()
+	.l-header
+		z-index 2
+		transition()
+		&.has-dropdown
+			background-color $bgColor
+			color $fontColor
+		.l-container
+			flex-wrap wrap
+		&__nav
+			flex-basis 100%
+			flex-direction column
+			background-color $bgColor
+			color $fontColor
+			text-transform uppercase
+			position absolute
+			top 52px
+			left 0
+			width 100%
+			text-align center
+			box-shadow 0px 0px 2px 0px rgba(0,0,0,0.1)
+			transition()
+			max-height 0
+			overflow hidden
+			.has-dropdown &
+				max-height 600px
+				overflow visible 
+				box-shadow none
+				transition()
+			
+		&__nav-item
+			&:not(:first-child)
+				margin 0
+		&__nav-link
+			padding 1rem 0
+			display block
+			font-size 1.5rem
+			border none 
+			&:hover 
+				border none
+				opacity .8
+		&__logo
+			height 50px
+		&__icon
+			display flex
+			&:before
+				content 'MENU'
+				padding 0.5rem 1rem 
+				font-size 1rem
+				border-color inherit
+				border-style solid 
+				border-width 1px
+				border-radius 5px
+				cursor pointer
+			.has-dropdown &
+				&:before 
+					content 'CLOSE'
+			.is-fixed &
+				color $fontColor
+
++above(rupture.mobile-cutoff)
+	.l-header
+		&:hover
+			transition()
+			background-color rgba($bgColor, 0.98)
+			.l-header__nav-item
+				color $fontColor
+				&.is-active
+					color $primaryColor
+		&__logo-link
+			.is-fixed &
+				margin 0
+		&__logo
+			.is-fixed &
+				transition()
+				height 50px
+		&__nav-item
+			.is-fixed &
+				//font-size 0.8rem
+				color $fontColor
+			.is-fixed &
+				&.is-active
+					color $primaryColor
+

@@ -1,0 +1,14 @@
+<section class="u-ftImg" style="background-image: url(/img/blog/blog-ft.jpg)">
+	<div class="l-container l-container--fluid">
+		<h2 class="title">{{ .Title }}</h2>
+	</div>
+</section>
+<br><br>
+<div class="l-container l-container--fluid">
+	<div class="l-brick l-brick--3 l-brick--margin" data-columns>
+	  {{ range (where .Data.Pages "Section" "blog") }}
+	      {{ partial "brick-item.html" . }}
+	  {{ end }}
+	</div>
+</div>
+

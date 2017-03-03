@@ -1,0 +1,14 @@
+<header class="l-header">
+  <div class="l-container l-container--fluid">
+    {{ $url := .Site.BaseURL }}
+  	<a class="l-header__logo-link" href="{{ $url }}">
+  		<img class="l-header__logo"  src="{{ "img/logo.svg" | absURL }}">
+  	</a>
+  	<span class="l-header__icon"></span>
+    <ul class="l-header__nav">
+    	{{ range .Site.Params.navlinks }}
+      	<li class="l-header__nav-item"><a class="l-header__nav-link" href="{{ $url }}{{ .url }}">{{ .name }}</a></li>
+      	{{ end }}
+    </ul>
+  </div>
+</header>

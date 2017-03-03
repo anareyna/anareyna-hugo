@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div>
+  {{ if and (isset .Params "image") .Params.image }}
+  <section class="u-ftImg" style="background-image: url({{ .Params.image }})">
+  {{ else }}
+  <section class="u-ftImg">
+  {{ end }}
+    <div class="l-container l-container--fluid">
+      <!-- <h4 class="title">{{ .Title }}</h4> -->
+    </div>
+  </section>
+
+  <br>
+
+  <div class="l-container">
+      <h1>{{ .Title }}</h1>
+      <h5 class="e-date">{{ .Date.Format "Jan 2, 2006" }}</h5>
+
+      {{ if and (isset .Params "demolink") .Params.demolink }}
+        <center><a href="{{ .Params.demolink }}">[ View demo ]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ .Params.srclink }}">[ View source code ]</a></center>  
+      {{ end }}
+      {{ .Content }}
+  </div>
+
+</div>
+{{ end }}
