@@ -1,10 +1,10 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/spf13/hugoThemes#themetoml for an example
 
-name = "Ani portfolio"
+name = "ani-theme"
 license = "MIT"
 licenselink = ""
-description = ""
+description = "ani-theme"
 homepage = ""
 tags = ["creative", "portfolio", "projects", "minimal", "responsive"]
 features = ["disqus", "responsive", "google analytics"]
@@ -17,4 +17,4 @@ min_version = 0.1
 # If porting an existing theme
 [original]
   name = "ani"
-  homepage = ""
+  homepage = "http://anareyna.com"

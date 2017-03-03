@@ -4,11 +4,7 @@ var stylus          = require('gulp-stylus');
 var rupture         = require('rupture');
 var poststylus      = require('poststylus');
 var lost            = require('lost');
-var coffee          = require('gulp-coffee');
-var spritesmith     = require("gulp.spritesmith");
-var imagemin        = require('gulp-imagemin');
 var changed         = require('gulp-changed');
-var pngquant        = require('imagemin-pngquant');
 var runSequence     = require('run-sequence');
 var browserSync     = require('browser-sync');
 var jshint          = require('gulp-jshint');
@@ -19,6 +15,7 @@ var consolidate     = require("gulp-consolidate");
 var plumberNotifier = require('gulp-plumber-notifier');
 var bower           = require('gulp-bower');
 var babel           = require('gulp-babel');
+var tinypng 		= require('gulp-tinypng-extended');
 var fs              = require('fs');
 
 var config = {
@@ -36,11 +33,13 @@ var path = {
 	src_js     		: 'preprocessors/js/',
 	src_sprite 		: 'img/sprite/*.png',
 	src_img    		: 'img/',
+	src_site_img	: 'site-images/',
 	src_libs   		: 'libs/**/*.js',
 	dist_html  		: config.currentTheme + 'layouts/html/',
 	dist_css   		: config.currentTheme + 'static/css/',
 	dist_js    		: config.currentTheme + 'static/js/',
 	dist_img   		: config.currentTheme + 'static/img/',
+	dist_site_img   : config.hugoRoot + 'static/img/',
 	js_hint    		: [config.currentTheme + 'static/js/**/*.js', 
 						config.currentTheme + '!static/js/libs/**/*.js']
 };
@@ -101,33 +100,32 @@ gulp.task('js:babel', function(cb) {
 	.pipe(gulp.dest(path.dist_js));
 });
 
-gulp.task('sprite', function () {
-	var spriteData = gulp.src(path.src_sprite).pipe(spritesmith({
-		imgName: 'sprite.png',
-		cssName: 'sprite.styl',
-		padding: 2,
-		algorithm: 'binary-tree',
-		imgPath: '../img/sprite.png'
-	}));
-	// Pipe image stream through image optimizer and onto disk
-	spriteData.img.pipe(imagemin()).pipe(gulp.dest(path.dist_img));
-	//spriteData.img.pipe(gulp.dest(path.src_img)); // No optimization
-	spriteData.css.pipe(gulp.dest(path.src_css + '_mixins/'));
+gulp.task('imagemin:site', function () {
+    gulp.src(path.src_site_img + '**/*.{png,jpg,jpeg}')
+		.pipe(changed(path.dist_site_img))
+    	.pipe(plumberNotifier())
+        .pipe(tinypng({
+            key: 'zPOzSBjC0Gdz4NJ2D4eg9M_3-GfRufei',
+            sigFile: 'images/.tinypng-sigs',
+            log: true
+        }))
+        .pipe(gulp.dest(path.dist_site_img));
 });
 
-gulp.task('imagemin', function () {
-	return gulp.src(path.src_img + '**/*.*')
-	.pipe(changed(path.dist_img))
-	.pipe(imagemin({
-		progressive: true,
-		svgoPlugins: [{removeViewBox: false}],
-		use: [pngquant()]
-	}))
-	.on("data", function(file){
-		console.log('changed file : ', file.path);
-	})
-	.pipe(gulp.dest(path.dist_img));
-	});
+gulp.task('imagemin:theme', function () {
+	gulp.src(path.src_img + '**/*.{png,jpg,jpeg}')
+		.pipe(changed(path.dist_img))
+    	.pipe(plumberNotifier())
+        .pipe(tinypng({
+            key: 'zPOzSBjC0Gdz4NJ2D4eg9M_3-GfRufei',
+            sigFile: 'images/.tinypng-sigs',
+            log: true
+        }))
+        .pipe(gulp.dest(path.dist_img));
+
+	gulp.src(path.src_img + '**/*.svg')
+    	.pipe(gulp.dest(path.dist_img));
+});
 
 gulp.task('fonts:compile', function(cb){
 	var dirList = []
@@ -201,10 +199,14 @@ gulp.task('icons', function(cb){
 	runSequence('icons:compile', 'fonts:compile', 'css', 'copy:fonts', cb)
 });
 
+gulp.task('imagemin', function(cb){
+	runSequence('imagemin:site', 'imagemin:theme', cb)
+});
+
 gulp.task('bower', function() {
 	return bower();
 });
 
 gulp.task('default', function(cb) {
-	runSequence('bower', 'html', 'js', 'css', 'sprite', 'imagemin', 'fonts', 'icons', cb);
+	runSequence('bower', 'html', 'js', 'css', 'imagemin', 'fonts', 'icons', cb);
 });
