@@ -7,9 +7,6 @@ image = "/img/portfolio/iperceive-preview.jpg"
 
 +++
 
-
-
-
 #### Client
 iPerceive
 

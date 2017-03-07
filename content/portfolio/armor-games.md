@@ -10,7 +10,7 @@ image = "/img/portfolio/armor-games-newsletter.jpg"
 
 
 #### Client
-Armor Games
+Armor Games.
 
 #### Task
 Graphic designer

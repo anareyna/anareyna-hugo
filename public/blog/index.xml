@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Ana Reyna</title>
+    <link>https://anareyna.github.io/blog/index.xml</link>
+    <description>Recent content in Blog on Ana Reyna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Apr 2015 11:32:58 -0500</lastBuildDate>
+    <atom:link href="https://anareyna.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learning about A/B Testing</title>
+      <link>https://anareyna.github.io/blog/learning-about-ab-testing/</link>
+      <pubDate>Mon, 06 Apr 2015 11:32:58 -0500</pubDate>
+      
+      <guid>https://anareyna.github.io/blog/learning-about-ab-testing/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;Escrito originalmente en español &lt;a href=&#34;http://frontendlabs.io/2435--que-es-ab-testing&#34;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you are a web designer, front-end developer, project manager or you have a website you might have heard about A/B Testing, in this post I’m going to explain the basics and see some examples to understand what it is about.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-a-b-testing&#34;&gt;What is A/B Testing?&lt;/h2&gt;
+
+&lt;p&gt;In simple words, an A/B Test compares two versions of a website and then determines which one produces better results at leading your visitors to one of your goals.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-is-it-called-a-b-testing&#34;&gt;Why is it called A/B Testing?&lt;/h2&gt;
+
+&lt;p&gt;Because we are comparing two options:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://anareyna.github.io/img/blog/ab-simple.png&#34; alt=&#34;ab simple&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As we can see in the image above, we have two similar scenarios in which the variable is the button’s color and it changes from blue to red.&lt;/p&gt;
+
+&lt;p&gt;The purpose of conducting an A/B test is to deny the null hypothesis. The A/B testing needs to demonstrate with a statistical significance that the &lt;strong&gt;test&lt;/strong&gt; is an improvement over the &lt;strong&gt;control&lt;/strong&gt; (there are specialized tools that do the job and I list below).&lt;/p&gt;
+
+&lt;h2 id=&#34;why-should-i-test&#34;&gt;Why should I test?&lt;/h2&gt;
+
+&lt;p&gt;We already know about some web standards that work best for the final user (the search bar should be placed at the top of the website, etc…), but what happens when we want to experiment and try new features or there are new ideas that come up and we have no information about the impact they may cause in our users?&lt;/p&gt;
+
+&lt;p&gt;When we test one idea against another this will minimize the risk of failure due to simple problems.&lt;/p&gt;
+
+&lt;p&gt;The A/B Testing also solves debates, since it avoids reaching wrong conclusions based on assumptions instead of a resolution to the problem with real users and data to back it up.&lt;/p&gt;
+
+&lt;h2 id=&#34;multivariate-testing&#34;&gt;Multivariate Testing&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://anareyna.github.io/img/blog/ab-multiple.png&#34; alt=&#34;ab multiple&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;real-example-of-a-successful-case&#34;&gt;Real example of a successful case&lt;/h2&gt;
+
+&lt;h3 id=&#34;electronic-arts&#34;&gt;Electronic Arts&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: To increase revenue&lt;/p&gt;
+
+&lt;p&gt;SimCity 5, one of  the most popular EA games, sold 1.1 million copies in the first 2 weeks of its launch. 50% of the pre-orders where digital downloads thanks to a good A/B testing strategy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://anareyna.github.io/img/blog/simcity_original.jpg&#34; data-action=&#34;zoom&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;In the left image we can see the &lt;strong&gt;original proposal&lt;/strong&gt;, EA launched a promotional offer to reach more game pre-orders. The offer was displayed in a banner placed at the top of the page. However, according to the team, the promo wasn’t increasing pre-sales as expected, so they decided to test other options to see which design or layout generated more revenue.&lt;/p&gt;
+
+&lt;p&gt;In the image at the right we have the &lt;strong&gt;variation&lt;/strong&gt;, here the team opted to eliminate the promotional banner off the website. The test brought some surprising results: &lt;strong&gt;the variation with no banner generated 43.4% more orders&lt;/strong&gt;. Turns out that people just wanted to buy the game without the extra incentives.&lt;/p&gt;
+
+&lt;p&gt;The A/B testing gave EA the information needed to maximize revenue in a very effective way.&lt;/p&gt;
+
+&lt;h2 id=&#34;getting-ready-for-the-tests&#34;&gt;Getting ready for the tests&lt;/h2&gt;
+
+&lt;p&gt;We want to start thinking about what we want to achieve. You can’t compare without analyzing and understanding the analytics first, this will be useful to identify the problematic areas (users are not registering, they abandon the shopping process, etc.).&lt;/p&gt;
+
+&lt;p&gt;AB variations are not chosen randomly, we need to take our time to consider the problem by interviewing users, testing, etc. You have to know your audience to know who you are targeting and what your users want and need.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-to-test&#34;&gt;What to test?&lt;/h2&gt;
+
+&lt;p&gt;We have to prioritize the tests, this will depend on your goals. For example, if you want to increase the registration number, you could test the registration form length, the fields type, the way your privacy policy are showing, etc. The goal here is to find what is keeping your users from registering to your website. You can solve this by testing the appropriate elements on your site.&lt;/p&gt;
+
+&lt;p&gt;Even though each A/B test is unique, there are certain elements that are usually tested:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Layout and website style&lt;/li&gt;
+&lt;li&gt;Titles or product description&lt;/li&gt;
+&lt;li&gt;Form length and field types&lt;/li&gt;
+&lt;li&gt;Product prices and promo offers&lt;/li&gt;
+&lt;li&gt;Text amount on the page (long vs. short)&lt;/li&gt;
+&lt;li&gt;Call to action buttons, size, position, color, wording, etc.&lt;/li&gt;
+&lt;li&gt;Images in landing pages or product pages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;start-creating-your-tests&#34;&gt;Start creating your tests&lt;/h2&gt;
+
+&lt;p&gt;Popular testing services:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.optimizely.com/&#34;&gt;Optimizely&lt;/a&gt; (popular, cheap and with a free basic plan option)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://vwo.com/&#34;&gt;Visual Website Optimizer&lt;/a&gt; (A/B Testing software for marketers)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.google.com/analytics/answer/1745149&#34;&gt;Google Content Experiments&lt;/a&gt; (free)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bingocardcreator.com/abingo&#34;&gt;A/Bingo&lt;/a&gt;, &lt;a href=&#34;http://vanity.labnotes.org/&#34;&gt;Vanity&lt;/a&gt; (Ruby on Rails)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://unbounce.com/&#34;&gt;Unbounce&lt;/a&gt; (specialized in landing pages)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.convert.com/&#34;&gt;convert.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kissmetrics.com/&#34;&gt;KISSmetrics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.maxymiser.com/&#34;&gt;Maxymiser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.adobe.com/la/solutions/testing-targeting.html&#34;&gt;Adobe Target&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;more-useful-resources&#34;&gt;More useful resources&lt;/h2&gt;
+
+&lt;p&gt;If you’re just starting with this topic you can get some ideas in the following websites:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://whichtestwon.com/&#34;&gt;WhichTestWon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.conversion-rate-experts.com/cro-tips/&#34;&gt;101 a/b testing tips&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://verifyapp.com/&#34;&gt;Verify App&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.crazyegg.com/&#34;&gt;Crazy Egg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://hubspot.com/&#34;&gt;Hubspot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.usertesting.com/&#34;&gt;Usertesting.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have more resources or comments don’t forget to share below, I’m always trying to improve and keep on learning!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automating sprite creation with Grunt</title>
+      <link>https://anareyna.github.io/blog/automating-sprite-creation-with-grunt/</link>
+      <pubDate>Wed, 11 Feb 2015 16:24:01 -0500</pubDate>
+      
+      <guid>https://anareyna.github.io/blog/automating-sprite-creation-with-grunt/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;Visita este &lt;a href=&#34;http://frontendlabs.io/889--automatizar-la-creacion-de-sprites-con-grunt&#34;&gt;link&lt;/a&gt; para la versión en español.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;why-should-i-use-sprites-in-my-project&#34;&gt;Why should I use sprites in my project?&lt;/h3&gt;
+
+&lt;p&gt;Sprites can benefit page speed in several ways. First, if many small images are combined into one large image, the browser will require fewer server connections. Second, depending on how well the large PNG compresses, this can end up saving a substantial amount of bandwidth. Finally, in some browsers it is faster to decode one large image than several small ones.&lt;/p&gt;
+
+&lt;p&gt;This is one of &lt;a href=&#34;http://pinterest.com&#34;&gt;Pinterest’s&lt;/a&gt; sprites.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/06/webapp-desktop-main-1x.356df158.png&#34; alt=&#34;webapp-desktop-main-1x.356df158&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s imagine for a moment that we need to add a new image in the existing sprite and rearrange the others around it, we would have to recalculate positions for every class in the stylesheet…&lt;/p&gt;
+
+&lt;p&gt;Would you like to do that task manually? I’m quite sure I wouldn’t.&lt;/p&gt;
+
+&lt;p&gt;Well, worry no more. Today we’re going to learn how to automate this process with a little help from Grunt, if you don’t know what Grunt is you can read &lt;a href=&#34;http://24ways.org/2013/grunt-is-not-weird-and-hard/&#34; title=&#34;Grunt for People Who Think Things Like Grunt are Weird and Hard&#34;&gt;this interesting post&lt;/a&gt; by Chris Coyier to get started.&lt;/p&gt;
+
+&lt;p&gt;The Grunt task we’ll be using is &lt;strong&gt;grunt-spritesmith&lt;/strong&gt;, for the full documentation visit the Github repo &lt;a href=&#34;https://github.com/Ensighten/grunt-spritesmith&#34;&gt;https://github.com/Ensighten/grunt-spritesmith&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now let’s set up the file structure to start creating the sprite of our project:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://frontendlabs.io/wp-content/uploads/2014/06/Captura-de-pantalla-2014-06-26-a-las-17.29.52.png&#34;&gt;&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/06/Captura-de-pantalla-2014-06-26-a-las-17.29.52.png&#34; alt=&#34;Captura de pantalla 2014-06-26 a la(s) 17.29.52&#34; /&gt;&lt;/a&gt;Inside the folder &lt;code&gt;mi-proyecto&lt;/code&gt; we have &lt;code&gt;css&lt;/code&gt; (where the stylesheet will be created) and the folder &lt;code&gt;img&lt;/code&gt; which also contains the &lt;code&gt;sprites&lt;/code&gt; folders where we’ll place all the separated images that we’ll join later on. (In order to keep this a basic tutorial we’ll only be working with .png images)&lt;/p&gt;
+
+&lt;p&gt;The content of the file &lt;code&gt;package.json&lt;/code&gt; is the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;{  
+	&amp;quot;name&amp;quot;: &amp;quot;mi-proyecto&amp;quot;,  
+	&amp;quot;version&amp;quot;: &amp;quot;0.1.0&amp;quot;,  
+	&amp;quot;devDependencies&amp;quot;: {  
+		&amp;quot;grunt&amp;quot;: &amp;quot;~0.4.5&amp;quot;,  
+		&amp;quot;grunt-spritesmith&amp;quot;: &amp;quot;^2.1.0&amp;quot;  
+	}  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and the content of &lt;code&gt;Gruntfile.js&lt;/code&gt; is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;module.exports = function(grunt) {  
+	grunt.initConfig({  
+	sprite:{  
+		all: {  
+			src: ‘img/sprites/*.png’,  
+			destImg: ‘img/spritesheet.png’,  
+			destCSS: ‘css/sprites.css’,  
+			algorithm: ‘binary-tree’  
+		}  
+	}  
+});
+
+// Load task  
+grunt.loadNpmTasks(‘grunt-spritesmith’);  
+};
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then we go to the root of our project in terminal and type this line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;npm install  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It should look like this so far:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.19.51.png&#34; alt=&#34;Captura de pantalla 2014-06-26 a la(s) 17.19.51&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hit enter and this will create a new folder called &lt;code&gt;node_modules&lt;/code&gt; with the dependencies of our project that are downloaded from the file &lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.21.48.png&#34; alt=&#34;Captura de pantalla 2014-06-26 a la(s) 17.21.48&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then run the task: grunt sprite&lt;br /&gt;
+&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.22.15.png&#34; alt=&#34;Captura de pantalla 2014-06-26 a la(s) 17.22.15&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.22.37.png&#34; alt=&#34;Captura de pantalla 2014-06-26 a la(s) 17.22.37&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This will create the sprite file &lt;code&gt;spritesheet.png&lt;/code&gt; and the stylesheet &lt;code&gt;sprites.css&lt;/code&gt; in the path specified above.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.23.13.png&#34; alt=&#34;Captura de pantalla 2014-06-26 a la(s) 17.23.13&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.23.26.png&#34; alt=&#34;Captura de pantalla 2014-06-26 a la(s) 17.23.26&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The styles and classes are ready to use in the file &lt;code&gt;sprite.css&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;/*  
+Icon classes can be used entirely standalone. They are named after their original file names.
+*/  
+
+.icon-ico_alert {  
+	background-image: url(../img/spritesheet.png);  
+	background-position: -93px 0px;  
+	width: 21px;  
+	height: 18px;  
+}  
+.icon-ico_check {  
+	background-image: url(../img/spritesheet.png);  
+	background-position: 0px 0px;  
+	width: 65px;  
+	height: 60px;  
+}  
+.icon-ico_fb {  
+	background-image: url(../img/spritesheet.png);  
+	background-position: -65px 0px;  
+	width: 28px;  
+	height: 28px;  
+}  
+.icon-ico_google {  
+	background-image: url(../img/spritesheet.png);  
+	background-position: -65px -28px;  
+	width: 28px;  
+	height: 28px;  
+}  
+.icon-ico_mail {  
+	background-image: url(../img/spritesheet.png);  
+	background-position: 0px -60px;  
+	width: 28px;  
+	height: 28px;  
+}  
+.icon-ico_time {  
+	background-image: url(../img/spritesheet.png);  
+	background-position: -28px -60px;  
+	width: 28px;  
+	height: 28px;  
+}  
+.icon-ico_twitter {  
+	background-image: url(../img/spritesheet.png);  
+	background-position: -56px -60px;  
+	width: 28px;  
+	height: 28px;  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;do-you-use-preprocessors&#34;&gt;Do you use preprocessors?&lt;/h3&gt;
+
+&lt;p&gt;We have the option to generate our styles in several formats (CSS, SASS, SCSS, LESS, Stylus).&lt;/p&gt;
+
+&lt;p&gt;To create the stylesheet in &lt;a href=&#34;http://learnboost.github.io/stylus/&#34;&gt;Stylus&lt;/a&gt;, we have to change line 7 of the `Gruntfile.js file and replace it with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;destCSS: ‘css/sprites.styl’,  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And we run the grunt sprite task again:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.22.15.png&#34; alt=&#34;Captura de pantalla 2014-06-26 a la(s) 17.22.15&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This will create a set of mixins in the `sprites.styl file with all the variables needed, for example;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;.icoFacebook  
+	sprite($ico_fb) // the image name is the same as the variable name  
+	display: inline-block  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which compiles in css to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.icoFacebook {  
+	background-image: url(&amp;quot;../img/spritesheet.png&amp;quot;);  
+	background-position: -65px 0px;  
+	width: 28px;  
+	height: 28px;  
+	display: inline-block;  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We should note that the names of the variables generated in the file &lt;code&gt;sprites.styl&lt;/code&gt; are the same names as the .png files found in the &lt;code&gt;img/sprite&lt;/code&gt; path.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text Packages to speed up your workflow</title>
+      <link>https://anareyna.github.io/blog/sublime-text-packages-to-speed-up-your-workflow/</link>
+      <pubDate>Mon, 23 Jun 2014 18:15:19 -0500</pubDate>
+      
+      <guid>https://anareyna.github.io/blog/sublime-text-packages-to-speed-up-your-workflow/</guid>
+      <description>
+
+&lt;p&gt;Sublime Text is one of the fastest code editors that has emerged in recent years. It has a great community that produces a lot of packages (or plugins) to speed up the development of your projects. It supports OS X, Linux and Windows platforms.&lt;/p&gt;
+
+&lt;p&gt;If you are not using Sublime Text you can find more information and download version 2 &lt;a href=&#34;http://www.sublimetext.com/&#34;&gt;here&lt;/a&gt; or version 3 (beta) &lt;a href=&#34;http://www.sublimetext.com/3&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Today we will see some tips and packages that you might find very useful:&lt;/p&gt;
+
+&lt;h3 id=&#34;shortcuts&#34;&gt;Shortcuts&lt;/h3&gt;
+
+&lt;p&gt;All shortcut combinations that come as default with Sublime are in the menu Preferences -&amp;gt; Key Binding – Default&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://frontendlabs.io/wp-content/uploads/2014/03/Captura-de-pantalla-2014-03-17-a-las-16.06.28.png&#34;&gt;&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/03/Captura-de-pantalla-2014-03-17-a-las-16.06.28.png&#34; alt=&#34;Captura de pantalla 2014-03-17 a la(s) 16.06.28&#34; /&gt;&lt;/a&gt;&lt;br /&gt;
+If you want to edit or add a shortcut you have to find and copy the lines of code that you want to customize from the file “Key Bindings – Default” and paste it into the file “Key Bindings – User” from the same menu. Let’s say we want to bind this shortcut “ctrl + alt + c” to comment some lines of code, we would have to add the following lines in the “Key Bindings – User” file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;{ &amp;quot;keys&amp;quot;: [&amp;quot;ctrl+/&amp;quot;], &amp;quot;command&amp;quot;: &amp;quot;toggle_comment&amp;quot;, &amp;quot;args&amp;quot;: { &amp;quot;block&amp;quot;: false } },  
+{ &amp;quot;keys&amp;quot;: [&amp;quot;ctrl+shift+c&amp;quot;], &amp;quot;command&amp;quot;: &amp;quot;toggle_comment&amp;quot;, &amp;quot;args&amp;quot;: { &amp;quot;block&amp;quot;: true } },  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Other hidden Sublime feature and a time-saver is for copying or cutting lines of code, just place the cursor in any part of your code and press “ctrl + c” (no need to select the entire line) and you’re ready to paste it.&lt;/p&gt;
+
+&lt;h3 id=&#34;packages&#34;&gt;Packages&lt;/h3&gt;
+
+&lt;p&gt;In order to use packages you need to install “Package control”, just copy a block of code in the Sublime console (View menu -&amp;gt; Show console) and you’re ready to go. Follow the instructions in &lt;a href=&#34;https://sublime.wbond.net/installation&#34;&gt;this link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once you have Package control installed, you can go to the Preferences menu -&amp;gt; Package Control -&amp;gt; Install Package or use the shortcul “ctrl+shift+p” to start searching any of the packages listed below.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://frontendlabs.io/wp-content/uploads/2014/03/Captura-de-pantalla-2014-03-17-a-las-16.41.46.png&#34;&gt;&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/03/Captura-de-pantalla-2014-03-17-a-las-16.41.46.png&#34; alt=&#34;Captura de pantalla 2014-03-17 a la(s) 16.41.46&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;sidebarenhancements-https-github-com-titobouzout-sidebarenhancements&#34;&gt;&lt;a href=&#34;https://github.com/titoBouzout/SideBarEnhancements&#34;&gt;SideBarEnhancements&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Adds improvements to files and folders of the Sublime sidebar, you will notice many options such as “Open in browser”, “Rename…”, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://frontendlabs.io/wp-content/uploads/2014/03/Captura-de-pantalla-2014-03-17-a-las-16.09.06.png&#34;&gt;&lt;img src=&#34;http://frontendlabs.io/wp-content/uploads/2014/03/Captura-de-pantalla-2014-03-17-a-las-16.09.06.png&#34; alt=&#34;Captura de pantalla 2014-03-17 a la(s) 16.09.06&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;brackethighligter-https-github-com-facelessuser-brackethighlighter&#34;&gt;&lt;a href=&#34;https://github.com/facelessuser/BracketHighlighter&#34;&gt;BracketHighligter&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;The name is self explanatory, it helps a lot to identify the beginning and ending of your lines of code in a much quicker way &lt;code&gt;[]&lt;/code&gt;, &lt;code&gt;()&lt;/code&gt;, &lt;code&gt;{}&lt;/code&gt;, &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;, &lt;code&gt;&#39;&#39;&lt;/code&gt;, &lt;code&gt;&amp;lt;tag&amp;gt;&amp;lt;/tag&amp;gt;&lt;/code&gt;.&lt;br /&gt;
+&lt;img src=&#34;https://github-camo.global.ssl.fastly.net/771f9df16f29a134369cbcb0913f55932d156983/687474703a2f2f646c2e64726f70626f782e636f6d2f752f3334323639382f427261636b6574486967686c6967687465722f4578616d706c65312e706e67&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;emmet-http-docs-emmet-io&#34;&gt;&lt;a href=&#34;http://docs.emmet.io/&#34;&gt;Emmet&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Emmet allows you to write huge code blocks in HTML at the speed of light, all you have to do is use HTML and css selectors.&lt;/p&gt;
+
+&lt;h4 id=&#34;gitgutter-https-github-com-jisaacks-gitgutter&#34;&gt;&lt;a href=&#34;https://github.com/jisaacks/GitGutter&#34;&gt;GitGutter&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This package shows an icon in the left side of the window, right next to the the line numbers, it shows if a line of code has been added, modified or deleted.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.github.com/jisaacks/GitGutter/master/screenshot.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;htmlbeautify-https-github-com-rareyman-htmlbeautify&#34;&gt;&lt;a href=&#34;https://github.com/rareyman/HTMLBeautify&#34;&gt;HTMLBeautify&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Gives format (indentation) to HTML code making it easier to read.&lt;/p&gt;
+
+&lt;h4 id=&#34;jsformat-https-github-com-jdc0589-jsformat&#34;&gt;&lt;a href=&#34;https://github.com/jdc0589/JsFormat&#34;&gt;JsFormat&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This is also a package to give format to Javascript code.&lt;/p&gt;
+
+&lt;h4 id=&#34;sublimerge-pro-http-www-sublimerge-com&#34;&gt;&lt;a href=&#34;http://www.sublimerge.com/&#34;&gt;Sublimerge Pro&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;It searches for differences between two files, two branches, revisions, etc., highlighting changes and lines with colors in a very intuitive way. The default shortcut is “ctrl+alt+d”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.sublimerge.com/Images/sublimerge-pro-linux.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;themes&#34;&gt;Themes&lt;/h3&gt;
+
+&lt;h4 id=&#34;theme-nil-https-github-com-nilium-st2-nil-theme&#34;&gt;&lt;a href=&#34;https://github.com/nilium/st2-nil-theme&#34;&gt;Theme – Nil&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://github.com/nilium/st2-nil-theme/raw/master/dark.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;theme-spacegray-http-kkga-github-io-spacegray&#34;&gt;&lt;a href=&#34;http://kkga.github.io/spacegray/&#34;&gt;Theme – Spacegray&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kkga.github.io/spacegray/assets/spacegray.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;theme-soda-https-github-com-buymeasoda-soda-theme&#34;&gt;&lt;a href=&#34;https://github.com/buymeasoda/soda-theme/&#34;&gt;Theme – Soda&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://github-camo.global.ssl.fastly.net/39feeec102d65ccd7a5b7d10bcf3acc674c8705b/687474703a2f2f6275796d6561736f64612e6769746875622e636f6d2f736f64612d7468656d652f696d616765732f73637265656e73686f74732f736f64612d322d6461726b2d7468656d652e706e673f763d32&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you know about more packages or tips for Sublime Text, please leave a comment below.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interacción Persona-Computador</title>
+      <link>https://anareyna.github.io/blog/interaccion-persona-computador/</link>
+      <pubDate>Mon, 29 Oct 2012 20:03:03 -0500</pubDate>
+      
+      <guid>https://anareyna.github.io/blog/interaccion-persona-computador/</guid>
+      <description>
+
+&lt;p&gt;Este es un primer resumen de las clases del curso &lt;a href=&#34;http://www.hci-class.org/&#34;&gt;“Interacción Persona-Computador”&lt;/a&gt; dictada por el profesor Scott Klemmer, profesor Asociado de Ciencias de la Computación en la Universidad de Stanford.&lt;/p&gt;
+
+&lt;h3 id=&#34;introducción&#34;&gt;Introducción&lt;/h3&gt;
+
+&lt;p&gt;En la Interacción Persona-Computador (IPC) lo primero que debemos tener en cuenta es el humano ya que éste es el que hace el uso del sistema y se comunica con los demás; luego tenemos el computador, que es la máquina y la red en la que se ejecuta el sistema; y después la interfaz, que representa el sistema al usuario.&lt;/p&gt;
+
+&lt;p&gt;IPC es el diseño, implementación y evaluación de las interfaces de usuario y este curso nos enseñará una serie de herramientas para hacer esto de manera efectiva.&lt;/p&gt;
+
+&lt;p&gt;Un buen diseño trae alegría a la gente, ayuda a hacer cosas que nos importan. Una buena interfaz de usuario tiene un enorme impacto en la habilidad de los usuarios para realizar tareas. Un mal diseño, en cambio, trae problemas, frustración y puede incluso costar vidas. Cuando una interfaz se vuelve invisible para el usuario, su manejo es automático y nuestra atención pasa de manipular la interfaz a realizar la tarea, a ésto le llamamos interfaz intuitiva.&lt;/p&gt;
+
+&lt;h3 id=&#34;el-poder-de-los-prototipos&#34;&gt;El poder de los prototipos&lt;/h3&gt;
+
+&lt;p&gt;La idea de una estrategia de creación de prototipos es tremendamente valiosa para el diseño eficaz. Cuando hablamos de prototipo, nos referimos a la creación de una aproximación a una idea de diseño de forma que puedas obtener retroalimentación y aprender rápidamente.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“Los prototipos casi siempre son y deben ser incompletos”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Los prototipos incorporan hipótesis de diseño y permiten a los diseñadores obtener retroalimentación, hay que tener muy en cuenta este punto, ya que el objetivo de la creación de un prototipo no es el artefacto, sino la retroalimentación que nos permite obtener información con rapidez, ayudándonos a traducir la idea en una interfaz intuitiva.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>First Gamification Assignment</title>
+      <link>https://anareyna.github.io/blog/first-gamification-assignment/</link>
+      <pubDate>Fri, 21 Sep 2012 20:15:13 -0500</pubDate>
+      
+      <guid>https://anareyna.github.io/blog/first-gamification-assignment/</guid>
+      <description>&lt;p&gt;The University of Pennsylvania is offering a Gamification course through &lt;a href=&#34;https://www.coursera.org/course/gamification&#34;&gt;Coursera&lt;/a&gt;, and this is the first assigment where I share what I’ve learned so far. Here’s the definition:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You are an employee of Cereals Incorporated, a large manufacturer of breakfast food products. Your supervisor, Madison County, approaches you because she knows you recently took a course on gamification, which she has heard will revolutionize marketing.&lt;/p&gt;
+
+&lt;p&gt;She tells you that Cereals Inc. is about to release a new line of ready-to-eat breakfast pastries, and she wants to know whether to use gamification as part of the marketing strategy. The breakfast pastries will be aimed at the 18-35 age bracket. Surveys show members of this demographic often skip breakfast because they don’t want to eat the typical cereals of their youth, and they are too active to cook their own breakfasts. Market research indicates that the pastries are likely to appeal more to women than men by a 65%-35% ratio. Cereals Inc. has a 35% share of the overall breakfast food market, but only a 10% share of the fragmented ready-to-eat segment.&lt;/p&gt;
+
+&lt;p&gt;Provide as many reasons as you can why gamification could be a useful technique to apply to the situation your manager has presented to you. Explain why these reasons address the specific scenario provided.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here is my answer:&lt;/p&gt;
+
+&lt;p&gt;Gamification could be a really useful technique to apply to this case in Cereals Inc. if used correctly. The main goal of this company is to sell as many products as they can to the target consumers, so the first reason is the creation of a new habit: make people want to have a ready-to-eat breakfast pastries every day. This will be achieved by including elements from games that will encourage consumers to buy the product, have breakfast and have a chance of gaining awards as they do it. Not only they will be satisfying a physiological need (food), but have the feeling that they earn things by doing it. Gamification is very related to psychology and this helps to understand how people form habits and feel progression when they consume and play.&lt;/p&gt;
+
+&lt;p&gt;Another reason to use gamification in this company is driving growth, of course! and keep your consumers happy and engaged. Consumers are looking for new ways to entertain themselves and the techniques in gamification will make them feel part of something bigger, it will turn the boring task of having breakfast into something fun or even social, where they can achieve something more than the mere satisfaccion of their basic needs.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

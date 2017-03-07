@@ -2,7 +2,7 @@
 showonlyimage = true
 draft = false
 date = "2012-01-26T22:19:45-05:00"
-title = "live in america"
+title = "Live in America"
 image = "/img/portfolio/live-in-america-paper.jpg"
 
 +++
