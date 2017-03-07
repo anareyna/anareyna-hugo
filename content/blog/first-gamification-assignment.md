@@ -7,7 +7,7 @@ date = "2012-09-21T20:15:13-05:00"
 +++
 
 
-The University of Pennsylvania is offering a Gamification course through [Coursera](https://www.coursera.org/course/gamification), and this is the first assigment where I share what I’ve learned so far. Here’s the definition:
+The University of Pennsylvania is offering a Gamification course through [Coursera](https://www.coursera.org/course/gamification), and this is the first assigment where I share what I’ve learned so far.  Here’s the definition:
 
 > You are an employee of Cereals Incorporated, a large manufacturer of breakfast food products. Your supervisor, Madison County, approaches you because she knows you recently took a course on gamification, which she has heard will revolutionize marketing.
 
