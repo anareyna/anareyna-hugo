@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contact on Ana Reyna</title>
+    <link>https://anareyna.github.io/contact/index.xml</link>
+    <description>Recent content in Contact on Ana Reyna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Nov 2016 13:00:25 +0530</lastBuildDate>
+    <atom:link href="https://anareyna.github.io/contact/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Get in touch</title>
+      <link>https://anareyna.github.io/contact/</link>
+      <pubDate>Sun, 06 Nov 2016 13:00:25 +0530</pubDate>
+      
+      <guid>https://anareyna.github.io/contact/</guid>
+      <description>&lt;p&gt;&lt;center&gt;
+    &lt;p style=&#34;font-size: 1.5rem; line-height: 2rem&#34;&gt;You can send me an
+        &lt;a style=&#34;color: indianred;&#34; href=&#34;mailto:anareymej@gmail.com&#34;&gt;email&lt;/a&gt; or find me on&lt;br&gt;
+        &lt;a style=&#34;color: #00b9f4;&#34; href=&#34;http://twitter.com/anareyna&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;,
+        &lt;a style=&#34;color: black;&#34; href=&#34;http://github.com/anareyna&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; or
+        &lt;a style=&#34;color: #1d87bd;&#34; href=&#34;http://linkedin.com/in/anireyna&#34; target=&#34;_blank&#34;&gt;LinkedIn&lt;/a&gt;.
+    &lt;/p&gt;
+    &lt;p&gt;Thanks for stopping by!&lt;/p&gt;
+&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
