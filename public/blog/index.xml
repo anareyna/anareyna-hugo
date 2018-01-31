@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Ana Reyna</title>
+    <link>https://anareyna.github.io/blog/</link>
+    <description>Recent content in Blog on Ana Reyna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Apr 2015 11:32:58 -0500</lastBuildDate>
+    
+	<atom:link href="https://anareyna.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning about A/B Testing</title>
+      <link>https://anareyna.github.io/blog/learning-about-ab-testing/</link>
+      <pubDate>Mon, 06 Apr 2015 11:32:58 -0500</pubDate>
+      
+      <guid>https://anareyna.github.io/blog/learning-about-ab-testing/</guid>
+      <description>Escrito originalmente en español aquí.
+ If you are a web designer, front-end developer, project manager or you have a website you might have heard about A/B Testing, in this post I’m going to explain the basics and see some examples to understand what it is about.
+What is A/B Testing? In simple words, an A/B Test compares two versions of a website and then determines which one produces better results at leading your visitors to one of your goals.</description>
+    </item>
+    
+    <item>
+      <title>Automating sprite creation with Grunt</title>
+      <link>https://anareyna.github.io/blog/automating-sprite-creation-with-grunt/</link>
+      <pubDate>Wed, 11 Feb 2015 16:24:01 -0500</pubDate>
+      
+      <guid>https://anareyna.github.io/blog/automating-sprite-creation-with-grunt/</guid>
+      <description>Visita este link para la versión en español.
+ Why should I use sprites in my project? Sprites can benefit page speed in several ways. First, if many small images are combined into one large image, the browser will require fewer server connections. Second, depending on how well the large PNG compresses, this can end up saving a substantial amount of bandwidth. Finally, in some browsers it is faster to decode one large image than several small ones.</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text Packages to speed up your workflow</title>
+      <link>https://anareyna.github.io/blog/sublime-text-packages-to-speed-up-your-workflow/</link>
+      <pubDate>Mon, 23 Jun 2014 18:15:19 -0500</pubDate>
+      
+      <guid>https://anareyna.github.io/blog/sublime-text-packages-to-speed-up-your-workflow/</guid>
+      <description>Sublime Text is one of the fastest code editors that has emerged in recent years. It has a great community that produces a lot of packages (or plugins) to speed up the development of your projects. It supports OS X, Linux and Windows platforms.
+If you are not using Sublime Text you can find more information and download version 2 here or version 3 (beta) here.
+Today we will see some tips and packages that you might find very useful:</description>
+    </item>
+    
+    <item>
+      <title>Interacción Persona-Computador</title>
+      <link>https://anareyna.github.io/blog/interaccion-persona-computador/</link>
+      <pubDate>Mon, 29 Oct 2012 20:03:03 -0500</pubDate>
+      
+      <guid>https://anareyna.github.io/blog/interaccion-persona-computador/</guid>
+      <description>Este es un primer resumen de las clases del curso “Interacción Persona-Computador” dictada por el profesor Scott Klemmer, profesor Asociado de Ciencias de la Computación en la Universidad de Stanford.
+Introducción En la Interacción Persona-Computador (IPC) lo primero que debemos tener en cuenta es el humano ya que éste es el que hace el uso del sistema y se comunica con los demás; luego tenemos el computador, que es la máquina y la red en la que se ejecuta el sistema; y después la interfaz, que representa el sistema al usuario.</description>
+    </item>
+    
+    <item>
+      <title>First Gamification Assignment</title>
+      <link>https://anareyna.github.io/blog/first-gamification-assignment/</link>
+      <pubDate>Fri, 21 Sep 2012 20:15:13 -0500</pubDate>
+      
+      <guid>https://anareyna.github.io/blog/first-gamification-assignment/</guid>
+      <description>The University of Pennsylvania is offering a Gamification course through Coursera, and this is the first assigment where I share what I’ve learned so far. Here’s the definition:
+ You are an employee of Cereals Incorporated, a large manufacturer of breakfast food products. Your supervisor, Madison County, approaches you because she knows you recently took a course on gamification, which she has heard will revolutionize marketing.
+She tells you that Cereals Inc.</description>
+    </item>
+    
+  </channel>
+</rss>
