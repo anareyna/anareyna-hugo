@@ -1,0 +1,43 @@
+---
+hide_body: false
+fields:
+- name: demolink
+  label: Demolink
+  type: text
+  hidden: false
+  default: http://anareyna.github.io/demos/project/dist/
+- name: srclink
+  label: Srclink
+  type: text
+  hidden: false
+  default: https://github.com/anareyna/demos/tree/master/project
+- name: image
+  label: Image
+  type: file
+  hidden: false
+  default: "/img/code/-mockup.jpg"
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: showonlyimage
+  label: Showonlyimage
+  type: boolean
+  hidden: false
+  default: false
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: ''
+- name: draft
+  label: Draft
+  type: boolean
+  hidden: false
+  default: false
